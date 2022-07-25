@@ -1,3 +1,24 @@
+.weather-app {
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 0;
+  display: block;
+  max-width: 1140px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  text-align: center;
+  width: 800px;
+}
 h1 {
-  color: blue;
+  font-size: 54px;
+  font-family: rampart one;
+  font-weight: 400;
+  text-align: left;
+}
+
+.search-field {
+  box-shadow: 2px 2px 2px 0;
+}
+.search-button {
+  box-shadow: 2px 2px 2px 0;
+  background-color: #ffff;
 }

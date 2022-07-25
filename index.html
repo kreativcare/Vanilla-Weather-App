@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +22,32 @@
     />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="app">
+      <container class="weather-app">
+        <video></video>
+        <div class="row">
+          <div class="col">
+            <h1>WeatherNow</h1>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <form>
+                <input
+                  class="form-control search-field"
+                  type="text"
+                  placeholder="Search for a city…"
+                />
+              </form>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-light search-button">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </container>
+    </div>
 
     <script src="src/app.js"></script>
   </body>
