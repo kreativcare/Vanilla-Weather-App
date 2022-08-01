@@ -2,6 +2,25 @@ body {
   background-color: #7f98c4;
 }
 
+h1 {
+  color: #594a4c;
+  font-size: 52px;
+  font-family: source sans pro;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  list-style: none;
+}
+
 .weather-app {
   background-color: #f9f8f8;
   border-radius: 25px;
@@ -12,15 +31,6 @@ body {
   padding: 20px 30px;
   text-align: center;
   width: 800px;
-}
-
-h1 {
-  color: #374c84;
-  font-size: 64px;
-  font-family: source sans pro;
-  font-weight: 700;
-  padding: 20px 0;
-  text-align: left;
 }
 
 .form-section {
@@ -38,29 +48,30 @@ h1 {
   margin-left: -260px;
 }
 
+.search-button:hover {
+}
+
 .city {
-  color: #594a4c;
+  color: #374c84;
   display: block;
   font-size: 48px;
   font-weight: 800;
   font-family: source sans pro;
+  margin-bottom: -20px;
   text-align: left;
-}
-
-.temp {
-  font-size: 48px;
-  font-family: source sans pro;
-  font-weight: 800;
 }
 
 .weather-today-icon {
   font-size: 48px;
+  font-family: source sans pro;
+  font-weight: 800;
 }
 
 .time-and-feel {
   display: block;
   font-family: source sans pro;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 100;
+  margin-top: 60px;
   text-align: left;
 }
