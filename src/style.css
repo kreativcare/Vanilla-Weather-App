@@ -1,11 +1,12 @@
 body {
   background-color: #7f98c4;
+  font-family: source sans pro;
 }
 
 h1 {
   color: #594a4c;
   font-size: 52px;
-  font-family: source sans pro;
+
   font-weight: 700;
   padding: 20px 0;
   text-align: left;
@@ -28,7 +29,7 @@ li {
   box-shadow: 2px 2px 2px 0;
   display: block;
   margin: 150px auto;
-  padding: 20px 30px;
+  padding: 20px 40px;
   text-align: center;
   width: 800px;
 }
@@ -56,22 +57,33 @@ li {
   display: block;
   font-size: 48px;
   font-weight: 800;
-  font-family: source sans pro;
+
   margin-bottom: -20px;
   text-align: left;
 }
 
 .weather-today-icon {
   font-size: 48px;
-  font-family: source sans pro;
+
   font-weight: 800;
+  padding-top: 20px;
+}
+
+.today-temp {
+  padding-left: 12px;
+}
+
+.units {
+  font-size: 18px;
+  position: relative;
+  top: -20px;
 }
 
 .time-and-feel {
   display: block;
-  font-family: source sans pro;
   font-size: 20px;
   font-weight: 100;
   margin-top: 60px;
+  padding-top: 30px;
   text-align: left;
 }
