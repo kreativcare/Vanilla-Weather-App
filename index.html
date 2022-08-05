@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/fab8d327ad.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <container class="weather-app">
@@ -50,15 +51,15 @@
       </div>
       <div class="row">
         <div class="col-6">
-          <div class="city"><p>Bremen</p></div>
+          <div class="city" id="city"><p></p></div>
           <ul>
               <li>
                  <span class="date" id="date">Sat 10.03.</span><span class="clock" id="time"> 09:18</span>
               </li>
               <li class="weather-today-icon">
-                <span >🌧 </span> <span class="today-temp"> 20</span> <span class="units"> °C | °F</span>
+                <span >🌧 </span> <span class="today-temp" id="todaystemperature"></span> <span class="units"> °C | °F</span>
               </li>
-              <li class="sky">
+              <li class="sky" id="skydescriptiontoday">
                 <span>rainy </span>
               </li>
             </ul>
@@ -66,13 +67,13 @@
         <div class="col-6">
           <ul class="time-and-feel">
             <li>
-             precipitation: 5%
+             humidity: <span id="humidity"></span> %
             </li>
             <li>
-            <span class="Wind">windspeed: 10 km/h</span>
+            <span >windspeed: <span class="Wind" id="windspeed"></span> km/h</span>
             </li>
             <li>
-              <span class="feels-like">feels like: <span>18</span>°C</span>
+              <span class="feels-like">feels like: <span id="feelslike"></span> °C</span>
             </li>
           </ul>
         </div>

@@ -30,6 +30,7 @@ li {
   display: block;
   margin: 150px auto;
   padding: 20px 40px;
+  padding-bottom: 40px;
   text-align: center;
   width: 800px;
 }
@@ -58,7 +59,7 @@ li {
   font-size: 48px;
   font-weight: 800;
 
-  margin-bottom: -20px;
+  margin-bottom: -10px;
   text-align: left;
 }
 
@@ -77,6 +78,10 @@ li {
   font-size: 18px;
   position: relative;
   top: -20px;
+}
+
+.sky {
+  text-transform: capitalize;
 }
 
 .time-and-feel {
