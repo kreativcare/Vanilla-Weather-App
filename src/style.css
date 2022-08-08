@@ -36,7 +36,7 @@ li {
 }
 
 .form-section {
-  padding: 20px 10px;
+  padding: 20px 0;
 }
 
 .search-field {
@@ -47,7 +47,6 @@ li {
   border-color: #f0916d;
   background-color: #f0916d;
   padding: 6px 20px;
-  margin-left: -260px;
 }
 
 .search-button:hover {
@@ -82,6 +81,7 @@ li {
 
 .sky {
   text-transform: capitalize;
+  padding-left: 15px;
 }
 
 .time-and-feel {
