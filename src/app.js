@@ -56,6 +56,8 @@ function displayTemperature(response) {
   let feelslikeElement = document.querySelector("#feelslike");
   feelslikeElement.innerHTML = Math.round(response.data.main.feels_like);
 
+  celsiusTemperature = response.data.main.temp;
+
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
@@ -80,5 +82,32 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function showFahrenheit(event) {
+  event.preventDefault();
+  celsiusElement.classList.remove("active");
+  fahrenheitElement.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#todaystemperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsius(event) {
+  event.preventDefault();
+  celsiusElement.classList.add("active");
+  fahrenheitElement.classList.remove("active");
+  let temperatureElement = document.querySelector("#todaystemperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let form = document.querySelector("#searchform");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitElement = document.querySelector("#fahrenheit-link");
+fahrenheitElement.addEventListener("click", showFahrenheit);
+
+let celsiusElement = document.querySelector("#celsius-link");
+celsiusElement.addEventListener("click", showCelsius);
+
+search("Bremen");

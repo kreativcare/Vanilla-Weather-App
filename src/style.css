@@ -23,7 +23,7 @@ li {
 }
 
 .weather-app {
-  background-color: #f9f8f8;
+  background-color: #f7f7f7;
   border-radius: 25px;
   border-style: solid;
   box-shadow: 2px 2px 2px 0;
@@ -76,7 +76,14 @@ li {
 .units {
   font-size: 18px;
   position: relative;
+  text-decoration: none;
   top: -20px;
+}
+
+.active {
+  color: #000000;
+  cursor: default;
+  text-decoration: none;
 }
 
 .sky {
