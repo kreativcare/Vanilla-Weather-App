@@ -3,6 +3,18 @@ body {
   font-family: source sans pro;
 }
 
+.weather-app {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  border-style: solid;
+  box-shadow: 2px 2px 2px 0;
+  display: block;
+  margin: 150px auto;
+  padding: 20px 30px 30px 60px;
+  text-align: center;
+  width: 680px;
+}
+
 h1 {
   color: #594a4c;
   font-size: 28px;
@@ -20,19 +32,6 @@ ul {
 
 li {
   list-style: none;
-}
-
-.weather-app {
-  background-color: #f7f7f7;
-  border-radius: 25px;
-  border-style: solid;
-  box-shadow: 2px 2px 2px 0;
-  display: block;
-  margin: 150px auto;
-  padding: 20px 40px;
-  padding-bottom: 40px;
-  text-align: center;
-  width: 800px;
 }
 
 .form-section {
@@ -102,4 +101,10 @@ a {
   margin-top: 93px;
   padding-top: 30px;
   text-align: left;
+}
+
+footer {
+  color: #594a4c;
+  font-size: small;
+  padding-top: 50px;
 }
