@@ -108,3 +108,9 @@ footer {
   font-size: small;
   padding-top: 50px;
 }
+
+.weather-forecast {
+  display: block;
+  padding-top: 40px;
+  text-align: center;
+}
