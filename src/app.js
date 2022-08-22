@@ -42,6 +42,28 @@ function formatDate(timestamp) {
   return `${day} ${today}. ${month} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+        <div class="col-2">
+          <div class="weather-forecast-date">${day}</div>
+          <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" class="" width="42">
+         <div class="weather-forecast-temperature"> 
+          <span class="weather-forecast-max-temperature">18°</span> <span class="weather-forecast-min-temperature">12°</span> </div>
+         </div>
+      
+        `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#todaystemperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -111,3 +133,4 @@ let celsiusElement = document.querySelector("#celsius-link");
 celsiusElement.addEventListener("click", showCelsius);
 
 search("Bremen");
+displayForecast();

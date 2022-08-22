@@ -111,6 +111,15 @@ footer {
 
 .weather-forecast {
   display: block;
-  padding-top: 40px;
+  font-size: 20px;
+  padding-top: 50px;
   text-align: center;
+}
+
+.weather-forecast-max-temperature {
+  font-weight: bold;
+}
+
+.weather-forecast-min-temperature {
+  font-size: smaller;
 }
