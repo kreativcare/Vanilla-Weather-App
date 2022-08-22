@@ -4,7 +4,7 @@ body {
 }
 
 .weather-app {
-  background-color: #f7f7f7;
+  background-color: #e4e4e4;
   border-radius: 25px;
   border-style: solid;
   box-shadow: 2px 2px 2px 0;
@@ -114,6 +114,10 @@ footer {
   font-size: 20px;
   padding-top: 50px;
   text-align: center;
+}
+
+.weather-forecast-date {
+  font-weight: 600;
 }
 
 .weather-forecast-max-temperature {
